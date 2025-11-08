@@ -10,7 +10,7 @@
 <br>전문성과 실전 역량을 동시에 갖춘 보안 인재로 성장하는 것을 목표로 하고 있습니다.
 
 </td>
-<td style="width: 40%;">
+<td>
 <img src="https://github.com/user-attachments/assets/92a32b24-bcb0-4c3c-97fd-df9af31eabe2" alt="profile" style="max-width:250%; height:auto;" />
 </td>
 </tr>
@@ -32,7 +32,8 @@
     - [Personal Projects](#-personal-projects)
 - [대외활동](#-대외활동)
 
-## <span style="color: green">Profile
+## <span style="color: green">🧑‍💻Profile
+## [![Typing SVG](https://readme-typing-svg.demolab.com?font=Roboto&pause=1000&color=5CC355&width=435&lines=%F0%9F%A7%91%E2%80%8D%F0%9F%92%BBProfile)](https://git.io/typing-svg)
 
 |  |  | 
 | :--- | :--- | 
@@ -284,7 +285,7 @@
 - **봉사 동아리** (2024.09~2025.06)
     - 교내외 다양한 봉사 활동에 참여
 
-- **교내 근로 장학생** (023/24.09~01, 2025.09~)
+- **교내 근로 장학생** (2023/24.09 ~ 01, 2025.09~)
     - 사무 행정 보조 및 문의·전화 응대 업무
     - 연구 관련 자료 및 파일 정리 업무 담당  
     - 교내 박물관 고고·복식 분야 실무 보조
