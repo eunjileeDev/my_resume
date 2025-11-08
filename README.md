@@ -20,17 +20,17 @@
 ---
 
 ## 목차
-- [Profile](#-1)
+- [Profile](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file)
 - [Learning Goal](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-1)
-- [Tech Stack](#-Tech-Stack)
-    - [Languages](#languages)
-    - [Tools/Development-Environment](#Tools/Development-Environment)
-    - [Frameworks](#Frameworks)
-    - [Security Tools](#security-tools-packet-capture-collection-analysis-and-deletion-etc)
-- [Projects](#-Projects)
-    - [Team Projects](#-team-projects)
-    - [Personal Projects](#-personal-projects)
-- [대외활동](#-대외활동)
+- [Tech Stack](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-2)
+    - [Languages](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#--languages)
+    - [Tools/Development-Environment](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#--toolsdevelopment-environment)
+    - [Frameworks](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#--frameworks)
+    - [Security Tools](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#--security-tools-packet-capture-collection-analysis-and-deletion-etc)
+- [Projects](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-3)
+    - [Team Projects](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-3)
+    - [Personal Projects](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-3)
+- [대외활동](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-4)
 
 ## [![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=27&pause=1000&color=008000&width=435&lines=%F0%9F%A7%91%E2%80%8D%F0%9F%92%BBProfile)](https://git.io/typing-svg)
 
@@ -43,7 +43,7 @@
 | **관심 분야** | 네트워크 보안, 취약점 분석 | 
 
 ---
-## [![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=27&pause=1000&color=008000&width=435&lines=%F0%9F%8E%AFLearning+Goal)](https://git.io/typing-svg)
+## <br>[![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=27&pause=1000&color=008000&width=435&lines=%F0%9F%8E%AFLearning+Goal)](https://git.io/typing-svg)
 
 저는 현재 언어 능력을 향상시키는 동시에 다양한 도구와 기술을 직접 사용해보며 폭넓은 역량을 쌓는 것을 목표로 하고 있습니다.  
 여러 사람과 함께 프로젝트를 수행하며 실제 협업 경험을 쌓고, 네트워크 보안, 취약점 분석, 클라우드 보안 등 다양한 분야를 탐색하면서 자신에게 가장 적합한 직무를 찾아가는 과정에 집중하고 있습니다.  
@@ -52,7 +52,7 @@
 
 
 
-## [![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=27&pause=1000&color=008000&width=435&lines=%F0%9F%92%BBTech+Stack)](https://git.io/typing-svg)
+## <br>[![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=27&pause=1000&color=008000&width=435&lines=%F0%9F%92%BBTech+Stack)](https://git.io/typing-svg)
 
 ### - Languages
 - [![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)](https://www.cprogramming.com/)
