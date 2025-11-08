@@ -20,8 +20,8 @@
 ---
 
 ## 목차
-- [Profile](#Profile)
-- [Learning Goal](#-Learning-Goal)
+- [Profile](#-1)
+- [Learning Goal](#-2)
 - [Tech Stack](#-Tech-Stack)
     - [Languages](#languages)
     - [Tools/Development-Environment](#Tools/Development-Environment)
