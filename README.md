@@ -21,7 +21,7 @@
 
 ## 목차
 - [Profile](#-1)
-- [Learning Goal](#-2)
+- [Learning Goal](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-1)
 - [Tech Stack](#-Tech-Stack)
     - [Languages](#languages)
     - [Tools/Development-Environment](#Tools/Development-Environment)
