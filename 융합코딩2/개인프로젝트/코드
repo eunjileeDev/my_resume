@@ -1,0 +1,421 @@
+#include <curses.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdarg.h>  // va_list, va_start, va_end 헤더 추가
+#define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable:4996)
+
+// PDCurses 초기화
+void initializeCurses() {
+    initscr();          // PDCurses 초기화
+    cbreak();           // 라인 버퍼링 비활성화
+    keypad(stdscr, TRUE); // 키 입력 활성화
+    noecho();           // 입력 문자 출력 억제
+}
+
+// PDCurses 종료
+void terminateCurses() {
+    endwin();           // PDCurses 종료
+}
+
+// 플레이어 정보 구조체 정의
+typedef struct {
+    int level;
+    int hp;
+    int max_hp;
+    int attack;
+    int defense;
+    char title[30]; // 칭호
+} Character;
+
+// 몬스터 정보 구조체 정의
+typedef struct {
+    char name[20];
+    int hp;
+    int attack;
+    int defense;
+    int collected; // 도감 등록 여부
+} Monster;
+
+// PDCurses 초기화
+void initializeCurses();
+// PDCurses 종료
+void terminateCurses();
+// 몬스터 동적 메모리 할당 함수
+Monster* createMonsterList(int count);
+// 몬스터 개별 생성 함수
+Monster createMonster(const char* name, int hp, int attack, int defense);
+// 몬스터 리스트 초기화
+void initializeMonsterList(Monster monsters[], int* monsterCount);
+// 특정 인덱스에 해당하는 몬스터를 반환(포인터 사용)
+Monster* getMonsterByIndex(Monster* monsters, int index, int monsterCount);
+// 캐릭터 초기화
+void initializeCharacter(Character* player);
+// 수집한 몬스터 개수 및 레벨에 따라 칭호 부여
+void assignTitle(Character* player, int monstersCaught);
+// 특정 맵에서 등장할 몬스터 설정
+Monster* getMonsterForMap(Monster* monsters, int mapLevel);
+// 전투 시스템 구현
+int battle(Character* player, Monster* monster);
+// 레벨업 시스템
+void levelUp(Character* player);
+// 몬스터 도감 저장 함수
+void saveMonsterBook(Monster* monsters, int count);
+// 몬스터 도감 로드 함수
+void loadMonsterBook(Monster* monsters, int count);
+// 현재 맵의 정보를 표시하고, 선택지 출력
+void displayMapInfo(WINDOW* mainWin, int mapLevel);
+// 선택지 입력 받기
+int getUserChoice();
+// 맵 이벤트 처리 함수
+void handleMapEvent(Character* player, WINDOW* mainWin, Monster* monsters, int monsterCount, int mapLevel);
+// 맵 종료 후 몬스터 수집 현황 및 다음 맵 이동 여부 결정
+void endMap(WINDOW* mainWin, Character* player, int mapLevel, int monstersCaught);
+// 레벨업 축하 메시지
+void displayLevelUpMessage(WINDOW* mainWin, Character* player);
+// 보스 처치 후 축하 메시지
+void displayBossVictoryMessage(WINDOW* mainWin);
+// 창 생성
+WINDOW* createWindow(int height, int width, int starty, int startx);
+// UI 초기 레이아웃 구성
+void initializeLayout(WINDOW** mainWin, WINDOW** statusWin);
+// 메인 텍스트 출력 함수 (가변 인자 지원)
+void displayMainText(WINDOW* mainWin, const char* text);
+// 상태 창 갱신
+void updateStatusWindow(WINDOW* statusWin, Character* player, int mapLevel, int monstersCaught);
+
+
+// 메인 함수
+int main() {
+    WINDOW* mainWin, * statusWin;
+    Character player;
+    Monster* monsters;
+    int monsterCount;
+    int mapLevel = 1; //시작 맵 레벨
+    int monstersCaught = 0; //수집한 몬스터 수
+
+
+    // PDCurses 초기화
+    initializeCurses();
+
+    // UI 레이아웃 초기화
+    initializeLayout(&mainWin, &statusWin);
+
+    // 캐릭터 및 몬스터 초기화
+    initializeCharacter(&player);
+    monsters = createMonsterList(5); //n개 몬스터
+    initializeMonsterList(monsters, &monsterCount);
+
+    // 샘플 텍스트 출력
+    displayMainText(mainWin, "초보자 헌터로서 새 삶을 시작한 것을 축하합니다!");
+    updateStatusWindow(statusWin, &player, mapLevel, monstersCaught);
+
+    // 게임 시작 대기 메시지
+    mvwprintw(mainWin, 2, 1, "시작하려면 아무키나 누르십시오...");
+    wrefresh(mainWin);
+    getch();  // 키 입력 대기
+
+    while (1) {
+        handleMapEvent(&player, mainWin, monsters, monsterCount, mapLevel);  // 맵 이벤트 처리
+        monstersCaught = 0;  // 수집된 몬스터 수 초기화 (단, 실제로 수집 여부를 게임 내에서 추적해야 합니다)
+        endMap(mainWin, &player, mapLevel, monstersCaught);  // 맵 종료 후 진행
+
+        // 맵을 진행하면서 게임을 계속하느냐 묻기
+        int continueGame = getUserChoice();
+        if (continueGame != 1) {
+            break;  // 1이 아니면 게임 종료
+        }
+
+        mapLevel++;  // 맵 레벨 증가
+    }
+
+    // 동적 메모리 해제
+    free(monsters);
+
+    // 윈도우 종료
+    delwin(mainWin);
+    delwin(statusWin);
+    terminateCurses();
+
+    return 0;
+}
+
+
+
+
+// 몬스터 동적 메모리 할당 함수
+Monster* createMonsterList(int count) {
+    Monster* monsters = (Monster*)malloc(sizeof(Monster) * count);
+    if (monsters == NULL) {
+        perror("Memory allocation failed");
+        exit(1);
+    }
+    return monsters;
+}
+
+// 몬스터 개별 생성 함수
+Monster createMonster(const char* name, int hp, int attack, int defense) {
+    Monster m;
+    strncpy(m.name, name, sizeof(m.name));
+    m.hp = hp;
+    m.attack = attack;
+    m.defense = defense;
+    m.collected = 0;  // 초기값은 수집되지 않은 상태
+    return m;
+}
+
+// 몬스터 리스트 초기화
+void initializeMonsterList(Monster monsters[], int* monsterCount) {
+    *monsterCount = 5;  // 몬스터 개수 설정
+    monsters[0] = createMonster("슬라임", 100, 10, 5);  // 기본 몬스터
+    monsters[1] = createMonster("고블린", 120, 15, 10); // 중간 난이도 몬스터
+    monsters[2] = createMonster("늑대인간", 150, 20, 15); // 강한 몬스터
+    monsters[3] = createMonster("3대천황-타이탄", 200, 30, 20); // 강력 몬스터
+    monsters[4] = createMonster("보스-드래곤", 300, 50, 30); // 최종 보스
+}
+
+// 특정 인덱스에 해당하는 몬스터를 반환(포인터 사용)
+Monster* getMonsterByIndex(Monster* monsters, int index, int monsterCount) {
+    if (index < 0 || index >= monsterCount) {
+        return NULL; // 인덱스가 유효하지 않을 경우 NULL 반환
+    }
+    return &monsters[index];
+}
+
+// 캐릭터 초기화
+void initializeCharacter(Character* player) {
+    player->level = 1;
+    player->hp = 100;  // 초기 체력
+    player->max_hp = 100;
+    player->attack = 10;  // 기본 공격력
+    player->defense = 5;  // 기본 방어력
+    player->title[0] = '\0'; //초기 칭호 비어있음
+}
+
+// 수집한 몬스터 개수 및 레벨에 따라 칭호 부여
+void assignTitle(Character* player, int monstersCaught) {
+    if (monstersCaught == 0) {
+        strcpy(player->title, "허접하고 가난한 하수 사냥꾼");
+ }
+    else if (monstersCaught <= 3) {
+        strcpy(player->title, "조금 경력이 생긴 중급 사냥꾼");
+    }
+    else if (monstersCaught <= 5) {
+        strcpy(player->title, "거들먹 거릴 수 있는 고급 마스터 사냥꾼");
+    }
+    else {
+        strcpy(player->title, "킹갓 제너럴 엠퍼러 제국 최고최강 고수 사냥꾼");
+    }
+
+    // 레벨에 따라 칭호 추가
+    if (player->level >= 10) {
+        strcat(player->title, " - 영웅");
+    }
+}
+
+// 특정 맵에서 등장할 몬스터 설정
+Monster* getMonsterForMap(Monster* monsters, int mapLevel) {
+    if (mapLevel < 1 || mapLevel > 5) {
+        return NULL;  // 유효한 맵 레벨이 아니면 NULL 반환
+    }
+
+    return &monsters[mapLevel - 1];  // mapLevel에 맞는 몬스터 반환
+}
+
+
+// 전투 시스템 구현
+int battle(Character* player, Monster* monster) {
+    while (player->hp > 0 && monster->hp > 0) {
+        // 플레이어 공격
+        monster->hp -= (player->attack - monster->defense);
+        if (monster->hp <= 0) {
+            return 1;  // 승리
+        }
+
+        // 몬스터 반격
+        player->hp -= (monster->attack - player->defense);
+        if (player->hp <= 0) {
+            return 0;  // 패배
+        }
+    }
+    return 0;  // 기본 반환
+}
+
+// 레벨업 시스템
+void levelUp(Character* player) {
+    player->level++;
+    player->max_hp += 10;  // 체력 증가
+    player->attack += 2;   // 공격력 증가
+    player->defense += 2;  // 방어력 증가
+    player->hp = player->max_hp;  // 체력 회복
+}
+
+// 몬스터 도감 저장 함수
+void saveMonsterBook(Monster* monsters, int count) {
+    FILE* file = fopen("monster_book.txt", "w");
+    if (file == NULL) {
+        perror("File opening failed");
+        return;
+    }
+    for (int i = 0; i < count; i++) {
+        fprintf(file, "%s %d\n", monsters[i].name, monsters[i].collected);
+    }
+    fclose(file);
+}
+
+// 몬스터 도감 로드 함수
+void loadMonsterBook(Monster* monsters, int count) {
+    FILE* file = fopen("monster_book.txt", "r");
+    if (file == NULL) {
+        return;  // 파일이 없으면 초기 상태 유지
+    }
+    for (int i = 0; i < count; i++) {
+        fscanf(file, "%s %d", monsters[i].name, &monsters[i].collected);
+    }
+    fclose(file);
+}
+// 현재 맵의 정보를 표시하고, 선택지 출력
+void displayMapInfo(WINDOW* mainWin, int mapLevel) {
+    char info[100];
+    sprintf(info, "현재 맵: %d", mapLevel);
+    displayMainText(mainWin, info);  // 기존의 displayMainText 함수 활용
+
+    // 선택지 출력
+    mvwprintw(mainWin, 3, 1, "1. 이동  2. 전투  3. 도감 보기");
+    wrefresh(mainWin);
+}
+// 선택지 입력 받기
+int getUserChoice() {
+    int choice;
+    printw("원하는 선택지를 입력하세요: ");
+    scanw("%d", &choice);
+    return choice;
+}
+void handleMapEvent(Character* player, WINDOW* mainWin, Monster* monsters, int monsterCount, int mapLevel) {
+    // 맵에 맞는 몬스터를 가져옴
+    Monster* monster = getMonsterForMap(monsters, mapLevel);
+
+    // 전투 또는 몬스터 수집 여부
+    displayMapInfo(mainWin, mapLevel);  // 맵 정보 출력
+
+    int choice = getUserChoice();  // 사용자의 선택 받기
+    if (choice == 2) {  // 전투 선택
+        int result = battle(player, monster);  // 전투 처리
+        if (result == 1) {
+            displayMainText(mainWin, "몬스터를 처치했습니다!");
+            player->level++;  // 레벨업
+            levelUp(player);
+            assignTitle(player, 5);  // 칭호 부여
+            monster->collected = 1;  // 몬스터 수집 상태로 변경
+
+            char message[100];
+            snprintf(message, sizeof(message), "[%s]이 도감에 추가 되었습니다!", monster->name);
+            displayMainText(mainWin, message); // 도감에 추가된 몬스터 이름 출력
+        }
+        else {
+            displayMainText(mainWin, "전투에서 패배했습니다.");
+        }
+    }
+    else if (choice == 3) {  // 도감 보기
+        // 수집된 몬스터 출력
+        char collectedMonsters[100] = "도감: ";
+        for (int i = 0; i < monsterCount; i++) {
+            if (monsters[i].collected) {
+                strcat(collectedMonsters, monsters[i].name);
+                strcat(collectedMonsters, ", ");
+            }
+        }
+
+        // 마지막 쉼표 제거
+        if (strlen(collectedMonsters) > 6) {  // "도감: " 이후에 몬스터가 추가되었다면
+            collectedMonsters[strlen(collectedMonsters) - 2] = '\0';  // 마지막 쉼표 제거
+        }
+
+        displayMainText(mainWin, collectedMonsters);
+    }
+}
+// 맵 종료 후 몬스터 수집 현황 및 다음 맵 이동 여부 결정
+void endMap(WINDOW* mainWin, Character* player, int mapLevel, int monstersCaught) {
+    displayMainText(mainWin, "맵을 완료했습니다.");
+    mvwprintw(mainWin, 3, 1, "수집한 몬스터 수: %d", monstersCaught);
+    mvwprintw(mainWin, 4, 1, "현재 칭호: %s", player->title);
+    wrefresh(mainWin);
+
+    // 다음 맵 이동 여부 묻기
+    int choice = getUserChoice();
+    if (choice == 1) {
+        mapLevel++;  // 맵 레벨 증가
+        displayMainText(mainWin, "다음 맵으로 이동합니다!");
+    }
+    else {
+        displayMainText(mainWin, "게임을 종료합니다.");
+    }
+}
+// 레벨업 축하 메시지
+void displayLevelUpMessage(WINDOW* mainWin, Character* player) {
+    char msg[50];
+    sprintf(msg, "축하합니다! 레벨 %d로 상승!", player->level);
+    displayMainText(mainWin, msg);
+}
+
+// 보스 처치 후 축하 메시지
+void displayBossVictoryMessage(WINDOW* mainWin) {
+    displayMainText(mainWin, "보스를 처치하고 영웅 칭호를 획득했습니다!");
+}
+
+
+
+// 창 생성
+WINDOW* createWindow(int height, int width, int starty, int startx) {
+    WINDOW* local_win = newwin(height, width, starty, startx);
+    box(local_win, 0, 0); // 창 테두리 생성
+    wrefresh(local_win);
+    return local_win;
+}
+
+
+
+// UI 초기 레이아웃 구성
+void initializeLayout(WINDOW** mainWin, WINDOW** statusWin) {
+    int screenHeight, screenWidth;
+    getmaxyx(stdscr, screenHeight, screenWidth);
+
+    // 메인 창 생성
+    int mainWinHeight = screenHeight - 3;
+    int mainWinWidth = (screenWidth * 3) / 4;
+    *mainWin = newwin(mainWinHeight, mainWinWidth, 0, 0);
+    box(*mainWin, 0, 0);
+    mvwprintw(*mainWin, 0, 2, " Main Window ");
+    wrefresh(*mainWin);
+
+    // 상태 창 생성
+    int statusWinHeight = mainWinHeight;
+    int statusWinWidth = screenWidth - mainWinWidth;
+    *statusWin = newwin(statusWinHeight, statusWinWidth, 0, mainWinWidth);
+    box(*statusWin, 0, 0);
+    mvwprintw(*statusWin, 0, 2, " Status Window ");
+    wrefresh(*statusWin);
+}
+
+
+// 메인 텍스트 출력 함수 (가변 인자 지원)
+void displayMainText(WINDOW* mainWin, const char* text) {
+    werase(mainWin); // 윈도우 내용 지우기
+    box(mainWin, 0, 0); // 윈도우에 테두리 그리기
+    mvwprintw(mainWin, 1, 1, "%s", text); // 텍스트 출력
+    wrefresh(mainWin); // 화면 갱신
+}
+
+
+
+// 상태 창 갱신
+void updateStatusWindow(WINDOW* statusWin, Character* player, int mapLevel, int monstersCaught) {
+    werase(statusWin);
+    box(statusWin, 0, 0);
+    mvwprintw(statusWin, 1, 1, "Floor: %d", mapLevel);
+    mvwprintw(statusWin, 2, 1, "HP: %d", player->hp);
+    mvwprintw(statusWin, 3, 1, "Title: %s", player->title);
+    mvwprintw(statusWin, 4, 1, "Monsters: %d", monstersCaught);  // 도감 진척도
+    wrefresh(statusWin);
+}
