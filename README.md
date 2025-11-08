@@ -272,7 +272,7 @@
 </table>
 
 --- 
-## [![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=27&pause=1000&color=008000&width=435&lines=%F0%9F%8F%86%EB%8C%80%EC%99%B8%ED%99%9C%EB%8F%99)](https://git.io/typing-svg)
+## [![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=27&pause=1000&color=008000&width=435&lines=%F0%9F%8F%86Extracurricular+Activities)](https://git.io/typing-svg)
 
 - **개발/보안 동아리 (Aegis)** (2023.03~2025.06)  
     - C언어와 Java 프로그래밍 팀 스터디 참여를 통해 학습 및 토론 진행
