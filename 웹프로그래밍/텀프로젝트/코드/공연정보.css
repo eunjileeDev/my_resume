@@ -1,0 +1,129 @@
+/* styles.css */
+
+body {
+    margin: 20px 0; /* body의 위쪽과 아래쪽 여백을 설정하여 웹사이트의 위 아래 여백을 추가 */
+    background-color: #ebddea; /* 배경색을 보라색으로 설정 */
+    display: flex;
+    flex-direction: column; /* 요소들을 세로 방향으로 배치 */
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    background-color: #ffffb5; 
+    color: #333; /* 헤더의 텍스트 색상을 흰색으로 지정 */
+    padding: 20px; /* 헤더의 위 아래 여백을 지정 */
+    margin: 0 20px; 
+    border-radius: 10px; /* 헤더의 테두리를 둥글게 만듦 */
+}
+
+.container {
+    margin: 20px; /* 요소들을 감싸는 컨테이너의 여백 설정 */
+    display: grid; /* 그리드 사용 */
+    justify-content: center; /* 요소들을 수평 중앙 정렬 */
+    align-items: center;
+}
+
+.return-to-main {
+    margin-bottom: 20px; /* 텍스트와 버튼 사이 여백 설정 */
+    text-align: center;
+}
+
+
+.button {
+    padding: 10px 20px; /* 버튼의 여백 설정 */
+    background-color: #abbce8; /* 버튼의 배경색 설정 */
+    color: #fff; /* 버튼의 텍스트 색상 설정 */
+    border: none; /* 버튼의 테두리 제거 */
+    border-radius: 5px; /* 버튼의 테두리를 둥글게 설정 */
+    cursor: pointer; /* 마우스 커서를 포인터로 변경하여 클릭 가능함을 표시 */
+}
+
+.input {
+    padding: 10px; /* 입력 칸의 여백 설정 */
+    border: 1px solid #ccc; /* 입력 칸의 테두리 스타일과 색상 설정 */
+    border-radius: 5px; /* 입력 칸의 테두리를 둥글게 설정 */
+    margin-right: 10px;
+} 
+
+
+/* 장르 리스트의 초기 표시 설정: 숨김 */
+.genreList {
+    display: none;
+    padding: 0;
+    margin: 0 20px;
+}
+
+/* 장르 리스트를 보여주는 클래스 */
+.show {
+    display: block;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: calc(100% - 40px);;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto
+}
+
+.card-title,
+.card-date,
+.card-detail {
+    margin: 10px 0;
+}
+.card-detail {
+    /*white-space: pre-wrap; /* 줄바꿈을 유지 */
+    max-height: 100px; /* 원하는 높이로 설정 */
+    overflow-y: auto; 
+}
+
+.share-button {
+    padding: 10px;
+    background-color: #abbce8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;  /* position 설정 추가 */
+    bottom: 20px;  /* 버튼을 카드 하단으로 배치 */
+    width: 80%; 
+    margin-top: auto;
+}
+button:hover {
+    background-color: #8a9ee8;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #ebddea; 
+    color: #333; 
+    padding: 20px;
+    text-align: center;
+    clear: both; /*clear 사용*/
+    display: grid;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center;
+}
+/* 모바일 환경 대응 */
+@media only screen and (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr); /* 모바일 화면에서는 한 열로 표시 */
+    }
+}

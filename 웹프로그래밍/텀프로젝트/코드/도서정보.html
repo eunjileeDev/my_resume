@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키워드로 도서 검색</title>
+    <link rel="stylesheet" href="./도서정보.css">
+</head>
+<body>
+
+<header>
+    <div class="title">
+        <h1>키워드로 도서 검색</h1>
+    </div>
+</header>
+
+
+
+<div class="container">
+    <div class="return-to-main">
+        <nav>
+            <ul>
+                <a href="웹프 과제.html" title="go-main">메인 화면으로 돌아가기</a></li>
+            </ul>
+        </nav>
+    <input type="text" class="input" id="keyword" placeholder="키워드 입력">
+    <button class="button" onclick="searchBooks()">검색</button>
+    </div>
+</div>
+
+<div class="cards">
+    <div class="card">
+        <img src="" alt="Image 1" class="card-img" id="img1">
+        <p class="card-title card-title">title1</p>
+        <p class="card-date card-date">date1</p>
+        <p class="card-detail card-detail">detail1</p>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <p>2024 web programming project</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="도서정보.js"></script>
+</body>
+</html>

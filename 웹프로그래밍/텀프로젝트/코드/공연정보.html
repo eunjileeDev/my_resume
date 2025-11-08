@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예술의 전당 공연 정보 확인, 공유</title>
+    <link rel="stylesheet" href="./공연정보.css">
+</head>
+<body>
+
+<header>
+    <div class="title">
+        <h1>예술의 전당 공연 정보 확인, 공유</h1>
+    </div>
+</header>
+
+<div class="container">
+    <div class="return-to-main">
+        <nav>
+            <ul>
+                <a href="웹프 과제.html" title="go-main">메인 화면으로 돌아가기</a></li>
+            </ul>
+        </nav>
+    <div class="buttons">
+        <button class="button" onclick="genreButton()">장르 확인</button>
+        <ul class="genreList" id="genreList">
+            <li>오페라</li>
+            <li>연극</li>
+            <li>무용</li>
+            <li>뮤지컬</li>
+            <li>콘서트</li>
+            <li>재즈</li>
+            <li>크로스오버</li>
+            <li>복합장르</li>
+        </ul>
+        <input type="text" class="input" id="genreInput" placeholder="장르 입력">
+        <button class="button" onclick="fetchPerformances()">확인</button>
+    </div>
+</div>
+
+<div class="cards">
+    <div class="card">
+        <p class="card-title card-title1">title1</p>
+        <p class="card-date card-date1">date1</p>
+        <p class="card-detail card-detail1">detail1</p>
+        <button class="share-button share-button1" onclick="copyContent()">복사하기</button>
+    </div>
+    <div class="card">
+        <p class="card-title card-title2">title2</p>
+        <p class="card-date card-date2">date2</p>
+        <p class="card-detail card-detail2">detail2</p>
+        <button class="share-button share-button1" onclick="copyContent()">복사하기</button>
+    </div>
+    <div class="card">
+        <p class="card-title card-title3">title3</p>
+        <p class="card-date card-date3">date3</p>
+        <p class="card-detail card-detail3">detail3</p>
+        <button class="share-button share-button1" onclick="copyContent()">복사하기</button>
+    </div>
+    <div class="card">
+        <p class="card-title card-title4">title4</p>
+        <p class="card-date card-date4">date4</p>
+        <p class="card-detail card-detail4">detail4</p>
+        <button class="share-button share-button1" onclick="copyContent()">복사하기</button>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <p>2024 web programming project</p>
+    </div>
+</footer>
+
+<script src="공연정보.js"></script>
+</body>
+</html>
