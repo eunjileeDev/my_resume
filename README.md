@@ -4,7 +4,7 @@
 <br>여러 대외 활동으로 경청과 명확한 의견 제시 능력을 키워 다양한 배경의 팀원들과 성공적으로 소통하며 원활한 협업 환경을 조성하는 능력이 장점입니다. 
 <br>전문성과 실전 역량을 동시에 갖춘 보안 인재로 성장하는 것을 목표로 하고 있습니다.
 
-![image](https://github.com/eunjileeDev/my_resume/issues/1)
+![Image](https://github.com/user-attachments/assets/92a32b24-bcb0-4c3c-97fd-df9af31eabe2)
 
 --- 
 ## 목차
