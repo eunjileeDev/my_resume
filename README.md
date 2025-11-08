@@ -7,6 +7,7 @@
 ![Image](https://github.com/user-attachments/assets/92a32b24-bcb0-4c3c-97fd-df9af31eabe2)
 <br>
 <img src="https://github.com/user-attachments/assets/92a32b24-bcb0-4c3c-97fd-df9af31eabe2" alt="profile" width="100" />
+<p align="right"><img src="https://github.com/user-attachments/assets/92a32b24-bcb0-4c3c-97fd-df9af31eabe2" alt="profile" width="100" /></p>
 --- 
 ## 목차
 - [Profile](#Profile)
