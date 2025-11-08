@@ -20,7 +20,7 @@
 ---
 
 ## 목차
-- [Profile]
+- Profile
 - [Learning Goal](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-1)
 - [Tech Stack](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-2)
     - [Languages](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#--languages)
