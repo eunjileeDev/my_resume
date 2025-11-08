@@ -20,7 +20,7 @@
 ---
 
 ## 목차
-- [Profile](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file)
+- [Profile]
 - [Learning Goal](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-1)
 - [Tech Stack](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-2)
     - [Languages](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#--languages)
@@ -85,7 +85,7 @@
  [![RegEdit](https://img.shields.io/badge/RegEdit-A0A0A0?style=for-the-badge)](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)
 ---
 
-## [![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=27&pause=1000&color=008000&width=435&lines=%F0%9F%9B%A1%EF%B8%8FProjects)](https://git.io/typing-svg)
+## <br>[![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=27&pause=1000&color=008000&width=435&lines=%F0%9F%9B%A1%EF%B8%8FProjects)](https://git.io/typing-svg)
 
 ### - Team Projects
 
@@ -272,7 +272,7 @@
 </table>
 
 --- 
-## [![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=27&pause=1000&color=008000&width=435&lines=%F0%9F%8F%86Extracurricular+Activities)](https://git.io/typing-svg)
+## <br>[![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=27&pause=1000&color=008000&width=435&lines=%F0%9F%8F%86Extracurricular+Activities)](https://git.io/typing-svg)
 
 - **개발/보안 동아리 (Aegis)** (2023.03~2025.06)  
     - C언어와 Java 프로그래밍 팀 스터디 참여를 통해 학습 및 토론 진행
