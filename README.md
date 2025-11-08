@@ -3,7 +3,7 @@
 
 <table border="0">
 <tr>
-<td style="width: 60%;">
+<td>
 
 안심할 수 있는 디지털 환경 구축을 목표로 학습 중인 학생입니다. 다양한 보안 프로젝트와
 실습을 통해 취약점 분석 및 침해 대응 능력을 쌓았습니다.
@@ -13,7 +13,7 @@
 
 </td>
 <td style="width: 40%;">
-<img src="https://github.com/user-attachments/assets/92a32b24-bcb0-4c3c-97fd-df9af31eabe2" alt="profile" width="200" />
+<img src="https://github.com/user-attachments/assets/92a32b24-bcb0-4c3c-97fd-df9af31eabe2" alt="profile" style="max-width:200%; height:auto;" />
 </td>
 </tr>
 </table>
