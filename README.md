@@ -32,7 +32,7 @@
     - [Personal Projects](#-personal-projects)
 - [대외활동](#-대외활동)
 
-## [![Profile](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=28&pause=1000&color=008000&width=435&lines=%F0%9F%A7%91%E2%80%8D%F0%9F%92%BBProfile)](https://git.io/typing-svg)
+## [![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=27&pause=1000&color=008000&width=435&lines=%F0%9F%A7%91%E2%80%8D%F0%9F%92%BBProfile)](https://git.io/typing-svg)
 
 |  |  | 
 | :--- | :--- | 
@@ -43,7 +43,7 @@
 | **관심 분야** | 네트워크 보안, 취약점 분석 | 
 
 ---
-## <span style="color: green">🎯Learning Goal
+## [![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=27&pause=1000&color=008000&width=435&lines=%F0%9F%8E%AFLearning+Goal)](https://git.io/typing-svg)
 
 저는 현재 언어 능력을 향상시키는 동시에 다양한 도구와 기술을 직접 사용해보며 폭넓은 역량을 쌓는 것을 목표로 하고 있습니다.  
 여러 사람과 함께 프로젝트를 수행하며 실제 협업 경험을 쌓고, 네트워크 보안, 취약점 분석, 클라우드 보안 등 다양한 분야를 탐색하면서 자신에게 가장 적합한 직무를 찾아가는 과정에 집중하고 있습니다.  
@@ -52,7 +52,7 @@
 
 
 
-## <span style="color: green">💻Tech Stack
+## [![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=27&pause=1000&color=008000&width=435&lines=%F0%9F%92%BBTech+Stack)](https://git.io/typing-svg)
 
 ### - Languages
 - [![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)](https://www.cprogramming.com/)
@@ -85,7 +85,7 @@
  [![RegEdit](https://img.shields.io/badge/RegEdit-A0A0A0?style=for-the-badge)](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users)
 ---
 
-## <span style="color: green">🛡️Projects
+## [![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=27&pause=1000&color=008000&width=435&lines=%F0%9F%9B%A1%EF%B8%8FProjects)](https://git.io/typing-svg)
 
 ### - Team Projects
 
@@ -272,7 +272,7 @@
 </table>
 
 --- 
-## <span style="color: green">🏆대외활동
+## [![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=27&pause=1000&color=008000&width=435&lines=%F0%9F%8F%86%EB%8C%80%EC%99%B8%ED%99%9C%EB%8F%99)](https://git.io/typing-svg)
 
 - **개발/보안 동아리 (Aegis)** (2023.03~2025.06)  
     - C언어와 Java 프로그래밍 팀 스터디 참여를 통해 학습 및 토론 진행
