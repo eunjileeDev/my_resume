@@ -25,7 +25,7 @@
 성공적으로 소통하며 원활한 협업<br> 환경을 조성하는 능력이 장점입니다.
 전문성과 실전 역량을<br> 동시에 갖춘 보안 인재로 성장하는 것을 목표로 하고 있습니다.
 <div style="float: right;">
-  <img src="https://example.com/profile.png" alt="profile" width="120"/>
+  <img src="https://github.com/user-attachments/assets/92a32b24-bcb0-4c3c-97fd-df9af31eabe2" alt="profile" width="120"/>
 </div>
 
 
