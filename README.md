@@ -5,7 +5,8 @@
 <br>전문성과 실전 역량을 동시에 갖춘 보안 인재로 성장하는 것을 목표로 하고 있습니다.
 
 ![Image](https://github.com/user-attachments/assets/92a32b24-bcb0-4c3c-97fd-df9af31eabe2)
-
+<br>
+<img src="https://github.com/user-attachments/assets/92a32b24-bcb0-4c3c-97fd-df9af31eabe2" alt="profile" width="100" />
 --- 
 ## 목차
 - [Profile](#Profile)
