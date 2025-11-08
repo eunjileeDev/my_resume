@@ -32,7 +32,7 @@
     - [Personal Projects](#-personal-projects)
 - [대외활동](#-대외활동)
 
-## [![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=28&pause=1000&color=008000&width=435&lines=%F0%9F%A7%91%E2%80%8D%F0%9F%92%BBProfile)](https://git.io/typing-svg)
+## [![Profile](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=28&pause=1000&color=008000&width=435&lines=%F0%9F%A7%91%E2%80%8D%F0%9F%92%BBProfile)](https://git.io/typing-svg)
 
 |  |  | 
 | :--- | :--- | 
