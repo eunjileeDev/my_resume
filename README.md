@@ -8,12 +8,12 @@
 
 --- 
 ## 목차
-- [Profile](#🧑‍💻Profile)
+- [Profile](#-Profile)
 - [Learning Goal](#-Learning-Goal)
 - [Tech Stack](#-Tech-Stack)
     - [Languages](#languages)
     - [Tools/Development-Environment](#Tools/Development-Environment)
-    - [Frameworks](#Framework)
+    - [Frameworks](#Frameworks)
     - [Security Tools](#security-tools-packet-capture-collection-analysis-and-deletion-etc)
 - [Projects](#-Projects)
     - [Team Projects](#-team-projects)
@@ -58,7 +58,7 @@
  [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
  [![GDB](https://img.shields.io/badge/GDB-4E8CCB?style=for-the-badge&logo=gdb&logoColor=white)](https://sourceware.org/gdb/)
 
-### - FrameWork
+### - FrameWorks
 - [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 - library(data visualization)
     - [![Pandas](https://img.shields.io/badge/Pandas-A0A0A0?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)  [![Matplotlib](https://img.shields.io/badge/Matplotlib-A0A0A0?style=for-the-badge&logo=matplotlib&logoColor=white)](https://matplotlib.org/) [![Seaborn](https://img.shields.io/badge/Seaborn-A0A0A0?style=for-the-badge&logo=seaborn&logoColor=white)](https://seaborn.pydata.org/) 
