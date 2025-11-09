@@ -1,7 +1,7 @@
 <h1>안녕하세요, 이은지입니다.</h1>
 <h3>안전한 연결, 신뢰의 세상을 만들고 싶은 사이버 보안학과 학생입니다.</h3>
 
-<img src="https://github.com/user-attachments/assets/92a32b24-bcb0-4c3c-97fd-df9af31eabe2" width="180px" align="right" style="padding-left: 20px; border-radius: 10px;"/>
+<img src="https://github.com/user-attachments/assets/92a32b24-bcb0-4c3c-97fd-df9af31eabe2" width="180px" align="right" style="padding-left: 25px; padding-bottom: 10px; border-radius: 5px;"/>
 안심할 수 있는 디지털 환경 구축을 목표로 학습 중 입니다.<br>
 다양한 보안 프로젝트와 실습을 통해 취약점 분석 및 침해 대응 능력을 쌓았습니다.<br>
 여러 대외 활동으로 경청과 명확한 의견 제시 능력을 키워 다양한 배경의 팀원들과 성공적으로 소통하며 원활한 협업 환경을 조성하는 능력이 장점입니다.<br>
