@@ -259,8 +259,8 @@
     <td>복권 번호를 생성하고, 로또 사이트에서 회차를 입력하면 번호를 크롤링해 와 사용자의 등수를 제공</td>
   </tr>
   <tr>
-    <td><b>C, urllib.request, BeautifulSoup</b></td>
-    <td>C</td>
+    <td><b>Technologies</b></td>
+    <td>C, urllib.request, BeautifulSoup</td>
   </tr>
 </table>
 
