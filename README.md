@@ -24,15 +24,15 @@
 
 ## 목차
 - Profile
-- [Tech Stack](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-2)
+- [Tech Stack](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-1)
     - [Languages](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#--languages)
     - [Tools/Development-Environment](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#--toolsdevelopment-environment)
     - [Frameworks](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#--frameworks)
     - [Security Tools](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#--security-tools-packet-capture-collection-analysis-and-deletion-etc)
-- [Projects](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-3)
-    - [Team Projects](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-3)
-    - [Personal Projects](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-3)
-- [Extracurricular Activities](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-4)
+- [Projects](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-2)
+    - [Team Projects](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#--team-projects)
+    - [Personal Projects](hhttps://github.com/eunjileeDev/my_resume?tab=readme-ov-file#--personal-projects)
+- [Extracurricular Activities](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-3)
 
 
 
