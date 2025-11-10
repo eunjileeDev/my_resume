@@ -1,12 +1,12 @@
-<h1>안녕하세요, 이은지입니다.</h1>
+<h1>안녕하세요, <span style="color: #f78707ff;">이은지</span>입니다!</h1>
 
+<h3> 기술로 신뢰를 설계하고 싶은 사람입니다.</h3>
 
-<img src="https://github.com/user-attachments/assets/92a32b24-bcb0-4c3c-97fd-df9af31eabe2" width="140px" align="left" style="padding-right: 25px; border-radius: 5px;"/>
-<h3>안전한 연결, 신뢰의 세상을 만들고 싶은 사이버 보안학과 학생입니다.</h3>
-<br>안심할 수 있는 디지털 환경 구축을 목표로 학습 중 입니다.<br>
-다양한 보안 프로젝트와 실습을 통해 취약점 분석 및 침해 대응 능력을 쌓았습니다.<br>
-여러 대외 활동으로 경청과 명확한 의견 제시 능력을 키워 다양한 배경의 팀원들과 성공적으로 소통하며 원활한 협업 환경을 조성하는 능력이 장점입니다.<br>
-전문성과 실전 역량을 동시에 갖춘 보안 인재로 성장하는 것을 목표로 하고 있습니다.
+안심할 수 있는 디지털 환경 구축을 목표로, 실무 중심 프로젝트를 통해 **취약점 분석 및 침해 대응 능력**을 구축했습니다.
+<br>
+현재는 **네트워크/클라우드 보안** 등 폭넓은 분야를 탐색하며 전문성을 확장하는 동시에, **적극적인 소통과 협업**으로 팀 시너지를 이끌어내는 강점을 활용하고 있습니다.
+<br>
+체계적인 학습과 실무 경험을 바탕으로, **보안으로 세상에 신뢰를 더하는 전문가**로 나아가고 있습니다.
 <br clear="all"/>
 
 ## [![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=27&pause=1000&color=008000&width=435&lines=%F0%9F%A7%91%E2%80%8D%F0%9F%92%BBProfile)](https://git.io/typing-svg)
@@ -24,7 +24,6 @@
 
 ## 목차
 - Profile
-- [Learning Goal](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-1)
 - [Tech Stack](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-2)
     - [Languages](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#--languages)
     - [Tools/Development-Environment](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#--toolsdevelopment-environment)
@@ -34,14 +33,6 @@
     - [Team Projects](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-3)
     - [Personal Projects](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-3)
 - [Extracurricular Activities](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-4)
-
-
-## <br>[![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=27&pause=1000&color=008000&width=435&lines=%F0%9F%8E%AFLearning+Goal)](https://git.io/typing-svg)
-
-저는 현재 언어 능력을 향상시키는 동시에 다양한 도구와 기술을 직접 사용해보며 폭넓은 역량을 쌓는 것을 목표로 하고 있습니다.  
-여러 사람과 함께 프로젝트를 수행하며 실제 협업 경험을 쌓고, 네트워크 보안, 취약점 분석, 클라우드 보안 등 다양한 분야를 탐색하면서 자신에게 가장 적합한 직무를 찾아가는 과정에 집중하고 있습니다.  
-
-이를 통해 단순한 기술 습득을 넘어, 실무에서 활용 가능한 전문성과 문제 해결 능력을 갖춘 개발자로 성장하고자 꾸준히 학습과 경험을 이어가고 있습니다.
 
 
 
@@ -90,7 +81,7 @@
       </a>
     </td>
     <td>
-      <b><i>fuse filesystem이용한 안티 랜섬웨어 개발</i></b>
+      <b><i>FUSE 기반 행위 분석을 통한 실시간 랜섬웨어 공격 탐지 및 차단 시스템 개발</i></b>
     </td>
   </tr>
   <tr>
