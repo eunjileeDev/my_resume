@@ -9,6 +9,16 @@
 전문성과 실전 역량을 동시에 갖춘 보안 인재로 성장하는 것을 목표로 하고 있습니다.
 <br clear="all"/>
 
+## [![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=27&pause=1000&color=008000&width=435&lines=%F0%9F%A7%91%E2%80%8D%F0%9F%92%BBProfile)](https://git.io/typing-svg)
+<img src="https://github.com/user-attachments/assets/92a32b24-bcb0-4c3c-97fd-df9af31eabe2" width="140px" align="left" style="padding-right: 25px; border-radius: 5px;"/>
+
+|  |  | 
+| :--- | :--- | 
+| **이름** | 이은지(Lee eunji) | 
+| **전공** | 단국대학교 산업보안학과 | 
+| **연락처** | enji4882@gmail.com | 
+| **GitHub** | [GitHub Repository](https://github.com/eunjileeDev) |
+| **관심 분야** | 네트워크 보안, 취약점 분석 | 
 
 ---
 
@@ -25,17 +35,7 @@
     - [Personal Projects](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-3)
 - [Extracurricular Activities](https://github.com/eunjileeDev/my_resume?tab=readme-ov-file#-4)
 
-## [![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=27&pause=1000&color=008000&width=435&lines=%F0%9F%A7%91%E2%80%8D%F0%9F%92%BBProfile)](https://git.io/typing-svg)
 
-|  |  | 
-| :--- | :--- | 
-| **이름** | 이은지(Lee eunji) | 
-| **전공** | 단국대학교 산업보안학과 | 
-| **연락처** | enji4882@gmail.com | 
-| **GitHub** | [GitHub Repository](https://github.com/eunjileeDev) |
-| **관심 분야** | 네트워크 보안, 취약점 분석 | 
-
----
 ## <br>[![Typing SVG](https://readme-typing-svg.demolab.com?font=Stack+Sans+Text&size=27&pause=1000&color=008000&width=435&lines=%F0%9F%8E%AFLearning+Goal)](https://git.io/typing-svg)
 
 저는 현재 언어 능력을 향상시키는 동시에 다양한 도구와 기술을 직접 사용해보며 폭넓은 역량을 쌓는 것을 목표로 하고 있습니다.  
