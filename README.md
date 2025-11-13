@@ -43,8 +43,8 @@
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-- [![JavaScript](https://img.shields.io/badge/JavaScript-A0A0A0?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/ko/docs/Web/JavaScript)
- [![HTML5](https://img.shields.io/badge/HTML5-E0E0E0?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/ko/docs/Web/HTML) 
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+- [![HTML5](https://img.shields.io/badge/HTML5-E0E0E0?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/ko/docs/Web/HTML) 
  [![CSS3](https://img.shields.io/badge/CSS3-D0D0D0?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/ko/docs/Web/CSS) 
  ![Java](https://img.shields.io/badge/Java-6C757D?style=for-the-badge&logo=java&logoColor=white)
 
