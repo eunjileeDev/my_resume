@@ -186,7 +186,7 @@
   </tr>
   <tr>
     <td><b>Technologies</b></td>
-    <td><img src="https://img.shields.io/badge/C-00599C?style=plastic&logo=c&logoColor=white" alt="C Language Badge"/></td>
+    <td><img src="https://img.shields.io/badge/C-00599C?style=plastic&logo=c&logoColor=white" alt="C Language Badge"/> <img src="https://img.shields.io/badge/Linux-FCC624?style=plastic&logo=linux&logoColor=black" alt="Linux Badge"/> </td>
   </tr>
 </table>
 
